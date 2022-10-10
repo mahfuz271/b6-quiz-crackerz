@@ -9,9 +9,10 @@ body {
 .main_menu li a.active {
   border-bottom: 3px solid #5D5FEF;
 }
-
+.faIconEye{
+  right: 20px;
+  top:5px;
+  cursor: pointer;
+}
 @media (max-width:768px) {
-  #navbar{
-    float: none !important;
-  }
 }
