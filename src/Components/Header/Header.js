@@ -1,28 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header id="masthead" class="site-header header">
-            <div class="container">
-                <div class="navbar row" role="navigation">
-                    <div class="navbar-header col-xs-12 col-sm-12 col-md-3">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="fa fa-bars"></span>
-                        </button>
-                        <a href="https://learnplus.trendingtemplates.com/" class="logo">
-                            <img alt="LearnPlus - Greate theme for Education" src="https://learnplus.trendingtemplates.com/wp-content/themes/learnplus/img/logo.png" />
-                        </a>
-                    </div>
+        <header className="p-3 border-bottom">
+            <div className="container">
+                <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <Link to="/" className="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                        <h3>QuizHub</h3>
+                    </Link>
+                    <ul className="nav col-12 col-lg-auto ms-lg-auto me-lg-3 mb-2 justify-content-center mb-md-0 main_menu">
+                        <li><Link to='/' className="nav-link px-2 link-dark active">Topics</Link></li>
+                        <li><Link className="nav-link px-2 link-dark" to='/statistics'>Statistics</Link></li>
+                        <li><Link className="nav-link px-2 link-dark" to='/blog'>Blog</Link></li>
+                    </ul>
 
-                    <nav id="site-navigation" class="primary-nav nav col-xs-12 col-md-9">
-                        <div class="main-nav">
-                            <ul id="menu-primary-menu" class="menu"><li id="menu-item-8896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1875 current_page_item current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-8896 bg-menu-white menu-item-mega"><a href="https://learnplus.trendingtemplates.com/">Home</a></li></ul>				</div>
-
-                    </nav>
                 </div>
             </div>
         </header>
-
     );
 };
 
