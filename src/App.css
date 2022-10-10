@@ -2,17 +2,12 @@ html,
 body {
     overflow-x: hidden;
 }
-.nav li a.active {
-  color: #5D5FEF !important;
-}
 
-.main_menu li a.active {
-  border-bottom: 3px solid #5D5FEF;
-}
 .faIconEye{
   right: 20px;
   top:5px;
   cursor: pointer;
 }
+
 @media (max-width:768px) {
 }
